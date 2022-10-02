@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+ul {
+    list-style-type: none;
+    
+}
+
+nav {
+    border-bottom: #d0d0d0 solid 2px;
+    border-top: #d0d0d0 solid 2px;
+    font-size: larger;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav ul {
+    margin: 0 5px;
+    display: inline-block; 
+}
+nav li {
+    padding: 5px;
+}
+
+main {
+    margin-top: 3%;
+}
+
+
+article .post-date {
+    text-align: right;
+    font-size: 33px;
+    border-bottom: #d0d0d0 solid 2px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+    nav li {
+        display: inline-block;
+        text-align: right;
+    }
+    nav {
+        text-align: right;
+    }
+    article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    article .post-content {
+        border-left: #d0d0d0 solid 2px;
+        padding-left: 10px;
+        max-width: 90%;
+        border-bottom: #d0d0d0 solid 2px;
+    }
+    
+    article figure{
+        text-align: center;
+    }
+    article .post-date {
+        font-size: 30px;
+        padding-right: 2%;
+        border-bottom: none;
+    }
+
+}
